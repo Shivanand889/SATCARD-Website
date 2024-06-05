@@ -27,6 +27,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+
 html{
     font-size: 62.5%;
     overflow-x: hidden;
@@ -35,7 +36,7 @@ html{
 }
 
 .header{
-    position: fixed;
+    /* position: fixed; */
     top: 0; left: 0; right: 0;
     z-index: 1000;
     display: flex;
@@ -85,4 +86,64 @@ html{
 
 #menu-btn{
     display: none;
+}
+
+.home{
+    background: rgba(0, 0, 0, 0.5) url(../public/image1.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    overflow: hidden;
+    background-blend-mode: overlay;
+}
+
+.content{
+    max-width: 57%;
+    margin-left: 60rem;
+    padding: 18rem 10rem 0;
+    color: #fff;
+
+}
+.content h3{
+    color: var(--black);
+    font-size: 3.5rem;
+}
+
+.content p{
+    font-size: 1.3rem;
+    padding: 8px 0;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.content h3 span{
+    /* color: var(--green); */
+    color: rgb(15, 78, 15);
+}
+
+.btn{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 6px 10px;
+    color: var(--black);
+    border: 1.5px solid var(--black);
+    border-radius: 8px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: var(--green);
+}
+
+.wave{
+    position: absolute;
+    width: 100%;
+    bottom: -100px;
+    color: #fbeaea;
+    opacity: 1;
+}
+
+
+.about{
+    display: flex;
 }
