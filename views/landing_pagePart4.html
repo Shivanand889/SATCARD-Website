@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="../public/Landing_pagePart4.css">
+</head>
+<body>
+    <footer>
+        <div class="contact">
+            
+            <div class="icon_div">
+                <div class="icon_container">
+                    <img src="../public/phone.png" class="icon first-icon">
+                    <p class="detail-con phone_first">Phone</p>
+                    <p class="detail_value phone_first">2222222222</p>
+                </div>
+                <div class="icon_container">
+                    <img src="../public/email.png" class="icon">
+                    <p class="detail-con">Email</p>
+                    <p class="detail_value">abc@gmail.com</p>
+                </div>
+                <div class="icon_container">
+                    <img src="../public/locate.png" class="icon ca">
+                    <p class="detail-con">Office Location</p>
+                    <p class="detail_value">Palakkad, Kerala</p>
+                </div>
+                <div class="icon_container">
+                    <img src="../public/clock.png" class="icon last-icon ca">
+                    <p class="detail-con phone_last">Working Hours</p>
+                    <p class="detail_value phone_last">9:00 AM - 5:00 PM</p>
+                </div>
+            </div>
+        </div>
+        <div class = "links">
+        
+        <div class ="links-div">
+            <div class="link_ele">
+                <img src ="../public/logonobg.png" class="logo-img">
+                 
+                 
+                <p class = "link-css-con logo-bel-con">SATCARD is a leading centre developing efficient and affordable</p>
+                <p class = "link-css-con">technological solutions in agriculture, with a vision to impact</p>
+                <p class = "link-css-con">over 5 million farmers in India by 2030. Connect with us using the</p>
+                <p class = "link-css-con ">following below social media links</p>
+                <!-- <p class = "link-css-con"></p> -->
+                <div class="social-media">
+                    <a href= "https://www.facebook.com"><img src= "../public/facebook.png" class ="social-icon social-first"></a>
+                    <a href= "https://www.linkedin.com/company/satcard-smart-agritech-centre-for-advanced-research-and-development/"><img src= "../public/linkedIn.png" class ="social-icon social-first"></a>
+                    <a href= "https://www.instagram.com"><img src= "../public/instagram.png" class ="social-icon"></a>
+                    <a href= "https://www.twitter.com"><img src= "../public/twitter.png" class ="social-icon"></a>
+                </div>
+            </div>
+            <div class= "quick">
+                <div class="quick-links">
+                    <p class = "heading">Quick Links</p>
+                    <a href= "#" class="links-click"><p class = "link-css link-first">Home</p></a>
+                    <a href= "#" ><p class = "link-css">About</p></a>
+                    <a href= "#" ><p class = "link-css">Solutions</p></a>
+                    <a href= "#" ><p class = "link-css">Contact</p></a>
+                    <a href= "#" ><p class = "link-css">Crops</p></a>
+                    <a href= "#" ><p class = "link-css">Resource</p></a>
+                </div>
+            </div>
+            <div>
+                <div class="useful-links">
+                    <p class = "heading" >Useful Links</p>
+                    <a href= "#"><p class = "link-css link-first">Terms and Conditions</p></a>
+                    <a href= "#"><p class = "link-css">Privacy Policy</p></a>
+                    <a href= "#"><p class = "link-css">FAQs</p></a>
+                    
+                </div>
+            </div>
+            <div class="download-links-div">
+                <div class="download-links">
+                    <p class = "heading">Download App</p>
+                    <p class = "link-css-con link-first">For more convenience download our app</p>
+                    <p class = "link-css-con">from the links below</p>
+                    <a href= "#"><img src = "../public/apple.png" class ="down-img down-img-first"></a>
+                    <a href= "#"><img src = "../public/android.png" class ="down-img"></a>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class = "copy-div">
+            <p class = "copy">Copyright @ 2024 all rights reserved</p>
+        </div>
+        
+    </div>
+
+    
+    </footer>
+    <script src="https://kit.fontawesome.com/0c8555221c.js" crossorigin="anonymous"></script>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const anchorTags = document.querySelectorAll('footer a');
+        
+        anchorTags.forEach(anchor => {
+            anchor.addEventListener('mouseenter', () => {
+                anchor.classList.add('hover-effect');
+            });
+    
+            anchor.addEventListener('mouseleave', () => {
+                anchor.classList.remove('hover-effect');
+            });
+        });
+    });
+    </script>
+</html>
