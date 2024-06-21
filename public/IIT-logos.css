@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.all-iit-logo {
+    height: 250px;
+    /* border-style: dashed; */
+    display: flex;
+    justify-content: center; /* Centering the child horizontally */
+}
+
+.iit-logos {
+    display: flex;
+    justify-content: space-between; /* Equal spacing between children */
+    width: 70%;
+}
+
+.logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    height: 200px;
+    width: 200px;
+}
+
+.logo .techin{
+    height : 185px ;
+    margin-top: 5px;
+}
+
