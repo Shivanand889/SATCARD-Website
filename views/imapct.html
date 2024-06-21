@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/impact.css">
+</head>
+<body>
+    <div class = "All-impact">
+        <div class="imp-detail">
+            <div class ="about-impact">
+                <div class ="imp-head">
+                    <p class = "A">A</p>
+                    <p class="Greener">Greener </p>
+                </div>
+                <p class="tommor">Tommorrow</p>
+            </div>
+            <p class = "quote">&ldquo;</p>
+            <div class="about-des">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur <br>
+                    adipisicing elit. Doloribus harum modi <br>
+                    accusantium est suscipit nobis molestias <br>
+                    iusto veritatis voluptates accusamus unde <br>
+                    ducimus inventore, iste, sunt, aut in! <br>
+                    iusto veritatis voluptates accusamus unde <br>
+                    ducimus inventore, iste, sunt, aut in! <br>
+                    accusantium est suscipit nobis molestias <br>
+                    iusto veritatis voluptates accusamus unde <br>
+                    Saepe, dolorum in?<br>
+                </p>
+                
+            </div>
+        </div>
+        <div class="impacts">
+            <div class="metrics">
+                <div class="metric-name m1">
+                    <p>Metrics Inspected</p>
+                </div>
+                <div class="metric-name m2">
+                    <p>Contamination Points Identfied</p>
+                </div>
+                <div class="metric-name m3">
+                    <p>Manholes Cleaned</p>
+                </div>
+                <div class="metric-name m4">
+                    <p>Litres of water saved</p>
+                </div>
+                <div class="metric-name m5">
+                    <p>Empowered Manual scavengers</p>
+                </div>
+                <!-- Duplicate elements for continuous scroll -->
+                <div class="metric-name m1">
+                    <p>Metrics Inspected</p>
+                </div>
+                <div class="metric-name m2">
+                    <p>Contamination Points Identfied</p>
+                </div>
+                <div class="metric-name m3">
+                    <p>Manholes Cleaned</p>
+                </div>
+                <div class="metric-name m4">
+                    <p>Litres of water saved</p>
+                </div>
+                <div class="metric-name m5">
+                    <p>Empowered Manual scavengers</p>
+                </div>
+            </div>
+            <div class="met-val">
+                <div class="metric-value m1">
+                    <p>3</p>
+                </div>
+                <div class="metric-value m2">
+                    <p>2</p>
+                </div>
+                <div class="metric-value m3">
+                    <p>1</p>
+                </div>
+                <div class="metric-value m4">
+                    <p>5</p>
+                </div>
+                <div class="metric-value m5">
+                    <p>4</p>
+                </div>
+                <!-- Duplicate elements for continuous scroll -->
+                <div class="metric-value m1">
+                    <p>3</p>
+                </div>
+                <div class="metric-value m2">
+                    <p>2</p>
+                </div>
+                <div class="metric-value m3">
+                    <p>1</p>
+                </div>
+                <div class="metric-value m4">
+                    <p>5</p>
+                </div>
+                <div class="metric-value m5">
+                    <p>4</p>
+                </div>
+            </div>
+            <div class="highlight">
+                <!-- Highlighting box -->
+            </div>
+            <div class="highlight-top">
+                <!-- Highlighting box -->
+            </div>
+            <div class="highlight-bottom">
+                <!-- Highlighting box -->
+            </div>
+            <div class="highlight-top1">
+                <!-- Highlighting box -->
+            </div>
+            <div class="highlight-bottom1">
+                <!-- Highlighting box -->
+            </div>
+        </div>
+
+    </div>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const metrics = document.querySelector('.metrics');
+            const metVal = document.querySelector('.met-val');
+            const metricNames = metrics.querySelectorAll('.metric-name');
+            const metricValues = metVal.querySelectorAll('.metric-value');
+
+            function highlightMiddleElement() {
+                metricNames.forEach(elem => {
+                    const rect = elem.getBoundingClientRect();
+                    const middle = (rect.top + rect.bottom) / 2;
+
+                    if (middle >= 230 && middle <= 310) {
+                        elem.querySelector('p').style.color = 'green';
+                        elem.querySelector('p').style.transform = 'scale(1.1)';
+                        elem.querySelector('p').style.transition = 'transform 0.5s ease';
+                    } else {
+                        elem.querySelector('p').style.color = 'grey';
+                        elem.querySelector('p').style.transform = 'scale(.7)';
+                        // elem.querySelector('p').style.transition = 'none'; 
+                    }
+                });
+
+                metricValues.forEach(elem => {
+                    const rect = elem.getBoundingClientRect();
+                    const middle = (rect.top + rect.bottom) / 2;
+
+                    if (middle >= 230 && middle <= 310) {
+                        elem.querySelector('p').style.color = 'green';
+                        elem.querySelector('p').style.transform = 'scale(1.1)';
+                        elem.querySelector('p').style.transition = 'transform 0.5s ease';
+                    } else {
+                        elem.querySelector('p').style.color = 'grey';
+                        elem.querySelector('p').style.transform = 'scale(.7)';
+                        // elem.querySelector('p').style.transition = 'none'; 
+                    }
+                });
+            }
+
+            highlightMiddleElement();
+            setInterval(highlightMiddleElement, 200); // Check every 200ms for changes in position
+        });
+    </script> -->
+</body>
+</html>
