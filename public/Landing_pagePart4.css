@@ -40,7 +40,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../public/contact1.jpeg');
+    background-image: url('../public/sky3.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -56,7 +56,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(232, 247, 197, 0.973);
+    /* background-color: rgba(232, 247, 197, 0.973); */
     /* background-color: rgba(149, 130, 77 , .69); */
     z-index: -1; /* Ensure it's above the background image but below the content */
     margin-top : 0 ;
@@ -99,7 +99,7 @@ footer {
 
 .detail-con, .detail_value {
     color: black;
-    color: black;
+    /* color: white; */
     margin: 2px 0; /* Adjust to reduce gap between texts */
 }
 
@@ -123,7 +123,7 @@ footer {
     flex-direction: column;
     position: relative;
     height :500px ;
-    background-color: white; /* Fallback color */
+    background-color: black; /* Fallback color */
     z-index: 1;
     overflow-x: hidden; /* Add this line to prevent horizontal overflow */
 }
@@ -135,7 +135,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../public/footer_back2.jpeg');
+    background-image: url('../public/grass6.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -149,12 +149,12 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.774); /* Semi-transparent brown overlay */
+    /* background-color: rgb(25, 82, 25);  */
     z-index: -1; /* Place it above the background image but below the content */
 }
 
 .link_ele{
-    margin-top: 30px;
+    margin-top: 60px;
     display : flex ;
     flex-direction: column;
 }
@@ -256,8 +256,8 @@ a{
 }
 
 .logo-img{
-    height: 240px;
-    width: 240px;
+    height: 180px;
+    width: 255px;
     margin-left: 35px;
 }
 
@@ -292,5 +292,6 @@ a.hover-effect:hover {
 
 .copy {
     color: black;
+    font-weight: 700;
     /* margin-bottom: 0; */
 }

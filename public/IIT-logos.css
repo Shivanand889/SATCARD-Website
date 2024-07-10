@@ -11,15 +11,25 @@ body, html {
 }
 
 .all-iit-logo {
-    height: 250px;
+    height: 330px;
     /* border-style: dashed; */
     display: flex;
+    flex-direction: column;
+    /* background-color: rgb(45, 134, 45); */
+    /* background-image: url('../public/sky3.jpg'); */
+    background-color: rgb(222, 235, 222,.5);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     justify-content: center; /* Centering the child horizontally */
 }
 
 .iit-logos {
     display: flex;
+    /* border-style: dashed; */
+    height : 250px ;
     justify-content: space-between; /* Equal spacing between children */
+    margin-left: 15%;
     width: 70%;
 }
 
@@ -38,3 +48,16 @@ body, html {
     margin-top: 5px;
 }
 
+.log-head{
+    display: flex;
+    height: 80px;
+    font-size: 37px;
+    
+    justify-content: center;
+    /* border-style: dashed; */
+    align-items: center;
+    
+}
+.log-head h1{
+    margin-top: 30px;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/testimonials1.css">
+</head>
+<body>
+    
+    <div class="impacts">
+        <div class ="testi">
+            <div class = "test-head">
+                <p class= "T">
+                    T
+                </p>
+                <p class="head">
+                    estimonials
+                </p>
+            </div>
+        </div>
+        <div class="metrics">
+            <div class="metric-name m1">
+                <img src = "../public/testimonial1.jpg">
+                <p class="quote">&ldquo;</p>
+                <p class="Mess">Good Service</p>
+            </div>
+            <div class="metric-name m2">
+                <img src = "../public/f1.jpg">
+                <p class="quote">&ldquo;</p>
+                <p class="Mess">Good Service</p>
+            </div>
+            <div class="metric-name m3">
+                <img src = "../public/testimonial2.jpg">
+                <p class="quote">&ldquo;</p>
+                <p class="Mess">Good Service</p>
+            </div>
+            <div class="metric-name m4">
+                <img src = "../public/f3.jpg">
+                <p class="quote">&ldquo;</p>
+                <p class="Mess">Good Service</p>
+            </div>
+            <div class="metric-name m5">
+                <img src = "../public/f4.jpg">
+                <p class="quote">&ldquo;</p>
+                <p class="Mess">Good Service</p>
+            </div>
+            <!-- Duplicate elements for continuous scroll -->
+            <div class="metric-name m1">
+                <img src = "../public/testimonial1.jpg">
+                <p class="quote">&ldquo;</p>
+                <p class="Mess">Good Service</p>
+            </div>
+            <div class="metric-name m2">
+                <img src = "../public/f1.jpg">
+                <p class="quote">&ldquo;</p>
+                <p class="Mess">Good Service</p>
+            </div>
+            <div class="metric-name m3">
+                <img src = "../public/testimonial2.jpg">
+                <p class="quote">&ldquo;</p>
+                <p class="Mess">Good Service</p>
+            </div>
+            <div class="metric-name m4">
+                <img src = "../public/f3.jpg">
+                <p class="quote">&ldquo;</p>
+                <p class="Mess">Good Service</p>
+            </div>
+            <div class="metric-name m5">
+                <img src = "../public/f4.jpg">
+                <p class="quote">&ldquo;</p>
+                <p class="Mess">Good Service</p>
+            </div>
+            
+    </div>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const metrics = document.querySelector('.metrics');
+            const metVal = document.querySelector('.met-val');
+            const metricNames = metrics.querySelectorAll('.metric-name');
+            const metricValues = metVal.querySelectorAll('.metric-value');
+
+            function highlightMiddleElement() {
+                metricNames.forEach(elem => {
+                    const rect = elem.getBoundingClientRect();
+                    const middle = (rect.top + rect.bottom) / 2;
+
+                    if (middle >= 230 && middle <= 310) {
+                        elem.querySelector('p').style.color = 'green';
+                        elem.querySelector('p').style.transform = 'scale(1.1)';
+                        elem.querySelector('p').style.transition = 'transform 0.5s ease';
+                    } else {
+                        elem.querySelector('p').style.color = 'grey';
+                        elem.querySelector('p').style.transform = 'scale(.7)';
+                        // elem.querySelector('p').style.transition = 'none'; 
+                    }
+                });
+
+                metricValues.forEach(elem => {
+                    const rect = elem.getBoundingClientRect();
+                    const middle = (rect.top + rect.bottom) / 2;
+
+                    if (middle >= 230 && middle <= 310) {
+                        elem.querySelector('p').style.color = 'green';
+                        elem.querySelector('p').style.transform = 'scale(1.1)';
+                        elem.querySelector('p').style.transition = 'transform 0.5s ease';
+                    } else {
+                        elem.querySelector('p').style.color = 'grey';
+                        elem.querySelector('p').style.transform = 'scale(.7)';
+                        // elem.querySelector('p').style.transition = 'none'; 
+                    }
+                });
+            }
+
+            highlightMiddleElement();
+            setInterval(highlightMiddleElement, 200); // Check every 200ms for changes in position
+        });
+    </script> -->
+</body>
+</html>

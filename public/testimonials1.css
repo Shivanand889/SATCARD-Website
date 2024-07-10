@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.impacts {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 530px;
+    width: 100%;
+    /* border-style: dashed; */
+    overflow: hidden; /* Hide any overflow */
+    /* background-color: rgb(10, 58, 10); */
+    background-color: rgb(222, 235, 222,.5);
+    /* background-image: url('../public/grass4.jpg'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.testi{
+    margin-top: 25px;
+}
+
+.test-head {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+    width: 100%; /* Ensure it takes the full width */
+}
+
+.T{
+    font-weight: bold;
+    font-size: 100px;
+}
+
+.head{
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 35px;
+    margin-left: -17px;
+}
+
+.metrics {
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: row;
+    width: 100%; /* Adjust width to be 100% */
+    margin-top: 60px;
+    animation: scroll 15s infinite linear;
+    animation-delay: calc(3s * var(--delay));
+}
+
+.metric-name {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    width: 350px ; /* Adjusted to be responsive */
+    margin-right: 150px;
+    text-align: center;
+    
+    /* border-style: dashed; */
+}
+
+.metric-name img{
+    height:200px ;
+    width:350px;
+    border-radius: 35px;
+}
+
+
+.quote{
+    font-size: 100px;
+    margin-bottom: -5px;
+    margin-left:-140px ;
+    color : rgb(255, 102, 0); ;
+}
+
+.Mess {
+    font-size: 25px;
+    margin-top: -74px;
+    color: black;
+    font-weight: bold;
+}
+
+@keyframes scroll {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-50%);
+    }
+}

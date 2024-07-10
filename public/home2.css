@@ -1,14 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 
-
-*{
+* {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     text-transform: capitalize;
-    transition: all .2s linear;
     outline: none;
     border: none;
 }
@@ -19,20 +17,24 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
+    height: 100%;
 }
 
 /* Header Styles */
 header {
     position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: rgba(44, 44, 37, 0.719);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 90px;
+    z-index: 1001; /* Higher than the video */
 }
 
-header .logo{
+header .logo {
     margin-left: 30px;
 }
 
@@ -40,7 +42,7 @@ header .logo img {
     height: 60px;
 }
 
-nav{
+nav {
     margin-right: 40px;
     display: flex;
     align-items: center;
@@ -56,724 +58,92 @@ nav ul {
 }
 
 nav ul li a {
-    color: #333;
+    color: white;
     text-decoration: none;
-    /* font-weight: bold; */
 }
 
 nav ul li a:hover {
-    color: #5a8b23;
+    color: #9fc278;
 }
 
-.nav-btn{
+.nav-btn {
     cursor: pointer;
     margin-left: 25px;
     padding: 8px 10px;
-    /* border: 1px solid #333; */
     border-radius: 10px;
     background-color: #5a8b23;
     color: #fff;
 }
 
-
-.nav-btn:hover{
+.nav-btn:hover {
     background-color: #fff;
     border: 1px solid #5a8b23;
     color: #5a8b23;
 }
 
-.hero-btn{
-    cursor: pointer;
-    margin-left: 25px;
-    padding: 8px 10px;
-    border: 1.5px solid #fff;
-    border-radius: 10px;
-    /* background-color: green; */
-    color: #fff;
-}
-
-
-.hero-btn:hover{
-    border: 2px solid #333;
-    color: #333;
-    font-weight: 600;
-}
-
-/* Dropdown Menu */
-/* .dropdown {
-    position: relative;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #ffffff;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-}
-
-.dropdown-content li {
-    padding: 8px 16px;
-}
-
-.dropdown-content li a {
-    color: #333;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content li a:hover {
-    background-color: #f1f1f1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-} */
-
-/* Hero Section */
 .hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
     text-align: center;
-    background-size: cover;
-    color: #fff; 
-    z-index: 1000;   
+    color: #fff;
+    z-index: 1000;
+    margin-top: -90px;
 }
 
- .hero-content{
+#myvideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the entire area */
+    z-index: -1;
+}
+
+.hero-content {
     position: absolute;
     bottom: 0;
     color: #f1f1f1;
     width: 100%;
     padding: 20px;
-    margin-bottom: 200px;
-} 
+    margin-bottom: 260px;
+}
 
 .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+    font-size: 80px;
+    margin-left: -600px;
+    margin-top: -20px;
 }
 
-.hero p {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
+.time {
+    margin-left: -930px;
+    font-size: 65px;
 }
 
-#myvideo {
-    max-width: 100%;
-    min-width: 100%;
-    min-height: 100%;
-    overflow: hidden;
-    position: relative;
-    z-index: -1;
+.let {
+    margin-left: -1050px;
+    font-size: 30px;
 }
 
-/* How It Works Section */
-
-.how-it-works {
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.how-it-works h2{
-    font-size: 2.3rem;
-    margin: 10px;
-    padding: 10px;
-}
-.steps {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.step {
-    background: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    flex: 0 1 30%;
-    margin: 10px;
-    /* padding: 20px; */
-    text-align: center;
-    transition: transform 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 400px; /* Set a consistent height */
-}
-.step img {
-    max-width: 100%;
-    height: auto;
-    max-height: 200px; /* Ensure images have the same height */
-    object-fit: cover;
-    border-radius: 8px;
-}
-.step h3 {
-    color: #2d6a4f;
-    margin: 15px 0;
-}
-.step p {
-    margin: 0 5px;
-    color: #333;
-    font-size: 16px;
-    flex-grow: 1;
-}
-.step a {
-    margin-bottom: 10px;
-    display: inline-block;
-    margin: 10px;
-    color: #2d6a4f;
-    text-decoration: none;
-    font-weight: bold;
-}
-.step:hover {
-    transform: scale(1.05);
-}
-
-
-/* Metrics Section */
-.metrics {
-    padding: 60px 20px;
-    background: linear-gradient(to right, #77ab3a, #2C5F2D);
-    /* background-color: green; */
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-}
-
-.metric {
-    max-width: 200px;
-}
-
-.metric h3 {
-    font-size: 2.5em;
-    color: white;
-    margin-bottom: 10px;
-}
-
-.metric p {
-    font-size: 1em;
-    color: white;
-}
-
-/* Clients Section */
-.clients {
-    text-align: center;
-    padding: 50px 20px;
-}
-.clients h2 {
-    font-size: 2.3rem;
-    /* color: #2d6a4f; */
-    margin-bottom: 40px;
-}
-.client-logos {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-.client-logos img {
-    max-width: 150px; 
-    max-height: 100px; 
-    object-fit: contain;
-    margin: 10px;
-}
-
-/* Testimonials Section */
- .testimonials {
-    padding: 45px 20px;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-.testimonials h2 {
-    margin-bottom: 40px;
-    font-size: 2.3em;
-}
-
-.testimonial-slider {
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-    position: relative;
-}
-
-.testimonial-slide {
-    min-width: 100%;
-    transition: transform 0.5s ease;
-    box-sizing: border-box;
-    padding: 20px;
-}
-
-.testimonial-slide img {
+.h-btn {
+    position: absolute;
+    padding: 12px 20px;
     width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
-
-.testimonial-slide p {
-    font-size: 1.2em;
-    color: #666;
-    margin-bottom: 10px;
-}
-
-/* .testimonial-slide h3 {
-    font-size: 1.2em;
-    color: #333;
-}  */
-
-
-
-/* Crops Section */
-.crops {
-    padding: 60px 20px;
-    /* background-color: #f9f9f9; */
-    text-align: center;
-}
-
-.crops h2 {
-    margin-bottom: 40px;
-    font-size: 2.5em;
-}
-
-.crop-slider {
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-    position: relative;
-}
-
-.crop-slide {
-    min-width: 100%;
-    transition: transform 0.5s ease;
-}
-
-.crop-slide img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-/* Slider Controls */
-.slider-controls {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
-}
-
-.slider-controls button {
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.slider-controls button:hover {
-    background: rgba(0, 0, 0, 0.8);
-}
-
-
-/* Footer */
-footer {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-.contact {
-    position: relative; /* Ensure the pseudo-elements are positioned correctly */
-    flex: 0 1 auto;
-    height: 170px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 0; /* Add padding to ensure proper spacing within the container */
-    z-index: 1;
-}
-
-.contact::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../public/contact1.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: -2; /* Ensure it's below the content */
-}
-
-.contact::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(247, 161, 86, 0.4);
-    /* background-color: rgba(149, 130, 77 , .69); */
-    z-index: -1; /* Ensure it's above the background image but below the content */
-}
-.icon_div {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    padding: 0 20px; /* Add padding to the container to ensure space for margins */
-}
-
-.icon_container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.icon {
-    height: 45px;
-    width: 45px;
-}
-
-.ca {
     height: 50px;
-    width: 50px;
+    align-items: center;
+    margin-left: 630px;
+    margin-top: 70px;
+    border-radius: 50px;
+    background-color: rgb(219, 108, 17);
 }
 
-.first-icon {
-    margin-left: 45px; /* Adjust as needed */
+.hero-btn p{
+    color:white ;
+    font-weight:500;
 }
-
-.last-icon {
-    margin-right: 45px; /* Adjust as needed */
-}
-
-.detail-con, .detail_value {
-    color: white;
-    color: white;
-    margin: 2px 0; /* Adjust to reduce gap between texts */
-}
-
-.detail-con {
-    color: white;
-    font-weight: bold;
-    margin-top: 10px; /* Adjust to reduce gap between icon and text */
-}
-
-.phone_first {
-    margin-left: 45px;
-}
-
-.phone_last {
-    margin-right: 45px;
-}
-
-.links {
-    flex: 1 1 auto;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    background-color: rgb(90, 214, 183); /* Fallback color */
-    z-index: 1;
-    overflow-x: hidden; /* Add this line to prevent horizontal overflow */
-}
-
-.links::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../public/footer_back2.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: -2; /* Place it below the overlay */
-}
-
-.links::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(90, 214, 183,0.6); /* Semi-transparent brown overlay */
-    z-index: -1; /* Place it above the background image but below the content */
-}
-
-.link_ele{
-    margin-top: 30px;
-    display : flex ;
-    flex-direction: column;
-}
-
-.social-media{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    margin-left: 30px;
-    width: 60%;
-}
-
-.social-icon{
-    height:40px ;
-    width : 40px ;
-}
-.social-first{
-    height:45px ;
-    width : 45px ;
-}
-.quick-links{
-    margin-top: 40px;
-    display: flex ;
-    flex-direction: column;
-}
-
-.useful-links{
-    margin-top: 40px;
-    display: flex ;
-    flex-direction: column;
-}
-.download-links{
-    margin-top: 40px;
-    display: flex ;
-    flex-direction: column;
-}
-
-
-
-
-.down-img{
-    height:50px;
-    width: 150px;
-    margin-left: 17px;
-    margin-top: 15px;
-}
-.down-img-first{
-    /* margin-left: 17px; */
-    margin-top: 40px;
-}
-.heading{
-    color: white;
-    font-weight: bold;
-    font-size: 24px;
-    font-style: regular;
-}
-
-.link-css{
-    color: white;
-    font-style: regular;
-    margin-top: 15px;
-    
-}
-
-.link-first{
-    margin-top: 25px;
-}
-
-a{
-    text-decoration: None;
-}
-
-.link-css-con{
-    color: white;
-    font-style: regular;
-}
-
-.links-div{
-    /* flex: 1 1 auto; */
-    display: flex;
-    /* align-items: center;
-    justify-content: center; */
-    margin-right: 80px;
-    margin-left: 50px;
-    justify-content: space-between;
-    width: 100%;
-    /* position: relative; */
-    /* background-color: brown; Fallback color */
-    /* z-index: 1; */
-}
-
-.logo-bel-con{
-    font-size: 0.9rem;
-    margin-top : 20px ;
-}
-
-.copy-div{
-    display: flex ;
-    flex-direction: column;
-}
-
-.logo-img{
-    height: 240px;
-    width: 240px;
-    margin-left: 35px;
-}
-
-.quick{
-    margin-left: -60px;
-}
-
-.download-links-div{
-    margin-right: 170px;
-}
-
-a.hover-effect {
-    /* text-decoration: underline; */
-    /* color: yellow; Adjust hover color as needed */
-    transition: transform 0.3s ease;
-}
-
-a.hover-effect:hover {
-    transform: scale(1.1); /* Adjust the scale factor for expansion */
-}
-
-.copy-div {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    margin-bottom: 5px;
-    transform: translateX(-50%);
-    text-align: center;
-    font-size: 17px;
-    width: 100%; /* Ensure it spans the entire width */
-}
-
-.copy {
-    color: white;
-    /* margin-bottom: 0; */
-}
-
-
-
-
-
-/* about section  */
-
-
-#journey {
-    background-color: white;
-    /* border-radius: 8px; */
-    /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
-    padding: 50px 20px;
-}
-
-.about-section h2 {
-    color: #507428;
-    /* color: #00796b; */
-    text-align: left;
-    font-size: 2.3rem;
-    font-weight: 650;
-    margin-bottom: 20px;
-}
-
-.about-section h3 {
-    color: #507428;
-    font-weight: 550;
-    margin-bottom: 20px;
-}
-
-.about-section p {
-    line-height: 1.6;
+.hero-btn:hover {
     color: #333;
-}
-
-
-.accordion {
-    margin-top: 2rem;
-}
-
-.accordion-item {
-    margin-bottom: 1rem;
-    border: 1px solid #5a8b23;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.accordion-button {
-    background-color: #5a8b23;
-    color: white;
-    cursor: pointer;
-    padding: 1rem;
-    text-align: left;
-    width: 100%;
-    border: none;
-    outline: none;
-}
-
-.accordion-content {
-    background-color: white;
-    display: none;
-    padding: 1rem;
-}
-
-
-/* New CSS for two-column layout */
- .journey-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.about-section, .accordion-section {
-    flex: 1;
-    padding: 20px;
-}
-
-.accordion-section {
-    margin-left: 20px;
-}  
-
-
-
-/* environmental impact section  */
-
-.data-container {
-    background: linear-gradient(to right, #77ab3a, #2C5F2D);
-    color: #f5f5f5;
-    text-align: center;
-    /* max-width: 1200px; */
-    margin: 0 auto;
-    padding: 25px;
-}
-
-
-.data-container h1 {
-    font-size: 2rem;
-    margin: 0;
-}
-
-.data-container p {
-    font-size: 1.1em;
-    margin: 10px 0;
-}
-
-#data-section {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.data-card {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    padding: 20px;
-    margin: 10px;
-    width: 30%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
-}
-
-.data-card h2 {
-    margin-top: 0;
-}
-
-.data-card p {
-    font-size: 1.2rem;
-    margin: 10px 0 0;
-}
-
-.data-card:hover {
-    transform: translateY(-10px);
+    font-weight: 600;
 }

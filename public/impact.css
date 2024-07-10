@@ -254,7 +254,13 @@ body, html {
     height : 650px ;
     /* border-style: dashed; */
     display: flex;
-    background-color: rgba(232, 247, 197, 0.973);
+    background-color: whitesmoke;
+    /* background-color: #2F4F4F; */
+     /* background-image: url('../public/grass4.jpg'); */
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+
 }
 .imp-detail{
     width :80%;

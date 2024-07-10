@@ -12,10 +12,18 @@ body, html {
 
 .scale-up{
     /* margin-top: 50px; */
-    border: 5px solid rgba(232, 247, 197, 0.973);
+    /* border: 5px solid rgba(232, 247, 197, 0.973); */
     height: 600px;
     /* margin-bottom: 50px; */
-    background-color: rgba(232, 247, 197, 0.973);
+    /* background-color: rgb(31, 75, 31); */
+    /* background-image: url('../public/grass4.jpg');  */
+    /* background-color: rgb(205, 218, 187); */
+    background-color: #63d471;
+background-image: linear-gradient(315deg, #63d471 0%, #233329 74%);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
     /* border-style: dashed; */
 }
 .drone-tech {
@@ -34,7 +42,8 @@ body, html {
     width: 400px;
     margin-left: 150px;
     border-radius: 40px;
-    background-color: rgba(53, 106, 124, 0.801);
+    /* background-color: rgba(53, 106, 124, 0.801); */
+    background-color: rgb(222, 235, 222);
     display: flex; /* Use flexbox for centering */
     flex-direction: column;
     align-items: center; /* Center horizontally */
@@ -53,7 +62,7 @@ body, html {
 
 .drone-paragraph {
     margin-left: 20px;
-    width: 290px;
+    width: 250px;
     text-align: left; /* Align text to the left */
     margin-top: 15px; /* Add some space between the heading and the paragraph */
     line-height: 1.5; /* Add spacing between lines of text */
