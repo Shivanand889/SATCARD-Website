@@ -82,10 +82,10 @@ nav ul li a:hover {
 }
 
 .hero {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
+    /* position: absolute; */
+    /* width: 100%; */
+    /* height: 100vh; */
+    /* overflow: hidden; */
     text-align: center;
     color: #fff;
     z-index: 1000;
@@ -111,20 +111,23 @@ nav ul li a:hover {
     margin-bottom: 260px;
 }
 
+
 .hero h1 {
-    font-size: 80px;
-    margin-left: -600px;
+    font-size: 60px;
+    margin-left: -700px;
     margin-top: -20px;
 }
 
 .time {
-    margin-left: -930px;
-    font-size: 65px;
+    margin-left: -700px;
+    font-size: 40px;
+    font-weight: 400;
 }
 
 .let {
-    margin-left: -1050px;
-    font-size: 30px;
+    margin-left: -700px;
+    font-size: 40px;
+    font-weight: 400;
 }
 
 .h-btn {
