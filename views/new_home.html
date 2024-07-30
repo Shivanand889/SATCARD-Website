@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/427a1571ad.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0c8555221c.js" crossorigin="anonymous"></script>
+    <title>Home - Revin Krishi</title>
+    <link rel="stylesheet" href="../public/new_home.css">
+    <link rel="stylesheet" href="../public/impact.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../public/logo.png" alt="Satcard Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="system-dropdown">
+                    <a href="#">Systems</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">System 1</a></li>
+                        <li><a href="#">System 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About us</a></li>
+                
+            </ul>
+            <a class="nav-btn" href="#">Book Demo</a>
+        </nav>
+    </header>
+    
+
+    <section class="hero">
+        <video autoplay muted loop plays-inline id="myvideo">
+            <source src="../public/drone_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h1>Next Gen Agri Intelligence Platform</h1>
+            <p>Data Backed Agriculture Solutions</p>
+            <a class="hero-btn" href="#">Book Demo</a>
+        </div>
+       
+    </section>
+
+    <section id="journey" class="journey-container">
+        <div class="about-section">
+            <h2>Environmental Impact Metre</h2>
+            <h3>A Journey of Innovation in Agriculture</h3>
+            <div class="about-section-content">
+                <p><i style="color: orange; font-size: 50px;" class="fa fa-2xl fa-quote-left"></i>&ldquo;Satcard is revolutionizing agriculture with smart technology solutions designed to optimize farming practices and increase efficiency. Our mission is to empower farmers with cutting-edge tools and techniques that enhance productivity, sustainability, and profitability. We are dedicated to bringing the benefits of modern technology to rural farming communities across India.</p>
+                <p>At Satcard, we partner with progressive farmers who are eager to embrace the future of farming. We provide comprehensive training and support on advanced agricultural practices, precision farming, and data-driven decision-making. Our solutions include IoT devices for real-time monitoring, automated irrigation systems, and AI-powered analytics to ensure optimal crop management.</p>
+            </div>
+            
+    
+        </div>
+        <div class="impacts">
+            <div class="metrics">
+                <div class="metric-name m1">
+                    <p>Metrics Inspected</p>
+                </div>
+                <div class="metric-name m2">
+                    <p>Contamination Points Identfied</p>
+                </div>
+                <div class="metric-name m3">
+                    <p>Manholes Cleaned</p>
+                </div>
+                <div class="metric-name m4">
+                    <p>Litres of water saved</p>
+                </div>
+                <div class="metric-name m5">
+                    <p>Empowered Manual scavengers</p>
+                </div>
+            </div>
+            <div class="met-val">
+                <div class="metric-name m1">
+                    <p>Metrics Inspected</p>
+                </div>
+                <div class="metric-name m2">
+                    <p>Contamination Points Identfied</p>
+                </div>
+                <div class="metric-name m3">
+                    <p>Manholes Cleaned</p>
+                </div>
+                <div class="metric-name m4">
+                    <p>Litres of water saved</p>
+                </div>
+                <div class="metric-name m5">
+                    <p>Empowered Manual scavengers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="systems">
+        <div class="carousel">
+            <div class="content-box">
+                <div class="content">
+                    <div class="title">Title 1</div>
+                    <div class="description">Description 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quidem inventore itaque? Totam et veritatis sunt illum qui temporibus tempora? Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, sint. Odio ullam dicta id, maxime molestias rem debitis dolores iure!</div>
+                </div>
+            </div>
+            <div class="slider-container">
+                <div class="list">
+                    <div class="item" data-title="Title 1" data-description="Description 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quidem inventore itaque? Totam et veritatis sunt illum qui temporibus tempora? Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, sint. Odio ullam dicta id, maxime molestias rem debitis dolores iure!">
+                        <img src="../public/system1.jpg">
+                    </div>
+                    <div class="item" data-title="Title 2" data-description="Description 2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis doloribus nulla at inventore illo officiis optio! Magni, repudiandae modi quia libero recusandae ipsam rerum harum labore provident architecto laboriosam reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, sint. Odio ullam dicta id, maxime molestias rem debitis dolores iure!">
+                        <img src="../public/system2.jpg">
+                    </div>
+                    <div class="item" data-title="Title 3" data-description="Description 3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis doloribus nulla at inventore illo officiis optio! Magni, repudiandae modi quia libero recusandae ipsam rerum harum labore provident architecto laboriosam reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, sint. Odio ullam dicta id, maxime molestias rem debitis dolores iure!">
+                        <img src="../public/system3.jpg">
+                    </div>
+                </div>
+                <div class="thumbnail">
+                    <div class="item">
+                        <img src="../public/system1.jpg" id = "1" onclick = "changeImage(this)">
+                        <div class="content">
+                            <div class="title">Name Slider</div>
+                            <div class="description">Description</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="../public/system2.jpg"  id = "2" onclick = "changeImage(this)">
+                        <div class="content">
+                            <div class="title">Name Slider</div>
+                            <div class="description">Description</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="../public/system3.jpg" id = "3" onclick = "changeImage(this)">
+                        <div class="content">
+                            <div class="title">Name Slider</div>
+                            <div class="description">Description</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="arrows">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div> -->
+        </div>
+    </section>
+
+  
+
+
+    
+
+
+    <!-- <section class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <img src="../public/device1.png" alt="Device Image">
+                <h3>Device</h3>
+                <p>Satcard device installed at the farm captures data from soil, climate, and crop canopy and sends it to Satcard server.</p>
+                <a href="#">Know More →</a>
+            </div>
+            <div class="step">
+                <img src="../public/device2.jpeg" alt="Data Image">
+                <h3>Data</h3>
+                <p>Farm data from the device gets processed using proprietary analytics algorithms on our cloud server.</p>
+                <a href="#">Know More →</a>
+            </div>
+            <div class="step">
+                <img src="../public/device3.png" alt="Critical Insights Image">
+                <h3>Critical Insights</h3>
+                <p>Insights on growing the best quality crops are sent to mobile App and Dashboards.</p>
+                <a href="#">Know More →</a>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <section class="clients">
+        <h2>Our Clients</h2>
+        <div class="client-logos">
+            <img src="../public/client1.png" alt="Client 1">
+            <img src="../public/client2.png" alt="Client 2">
+            <img src="../public/client3.png" alt="Client 3">
+            <img src="../public/client4.jpeg" alt="Client 4">
+            <img src="../public/client5.png" alt="Client 5">
+            <img src="../public/client6.png" alt="Client 6">
+            <img src="../public/client7.png" alt="Client 7">
+            <img src="../public/client8.png" alt="Client 8">
+            <img src="../public/client9.png" alt="Client 9">
+            <img src="../public/pkd-logo.png" alt="Client 10">
+            <img src="../public/techin.jpeg" alt="Client 11">
+        </div>
+    </section> -->
+
+     <!-- Service Section -->
+     <section class="service-section">
+        <h1>Make Your Mark with Revin Krishi</h1>
+        <p>Delivering top-notch business results requires high-quality, accurate data. Look no further. Whatever your goal, Revin Krishi can help you achieve your desired outcome.</p>
+        <div class="service-icons-container">
+            <div class="service-icon-item">
+                <img src="../public/accelerate-icon.svg" alt="Accelerate R&D">
+                <p>Accelerate R&D</p>
+            </div>
+            <div class="service-icon-item">
+                <img src="../public/power-icon.svg" alt="Power Agronomic Advice">
+                <p>Power Agronomic Advice</p>
+            </div>
+            <div class="service-icon-item">
+                <img src="../public/streamline-icon.svg" alt="Streamline Food Supply Chain">
+                <p>Streamline Food Supply Chain</p>
+            </div>
+            <div class="service-icon-item">
+                <img src="../public/verify-icon.svg" alt="Verify Sustainability Impact">
+                <p>Verify Sustainability Impact</p>
+            </div>
+            <div class="service-icon-item">
+                <img src="../public/maximize-icon.svg" alt="Maximize Yield & Quality">
+                <p>Maximize Yield & Quality</p>
+            </div>
+            <div class="service-icon-item">
+                <img src="../public/optimize-icon.svg" alt="Optimize Water & Nutrients">
+                <p>Optimize Water & Nutrients</p>
+            </div>
+            <div class="service-icon-item">
+                <img src="../public/reduce-icon.svg" alt="Reduce Pesticide Use">
+                <p>Reduce Pesticide Use</p>
+            </div>
+            <div class="service-icon-item">
+                <img src="../public/manage-icon.svg" alt="Manage Farm Logistics">
+                <p>Manage Farm Logistics</p>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial-slide">
+                <img src="../public/testimonial1.jpg" alt="Client 1">
+                <p>"Satcard has revolutionized our farming practices with their advanced data insights."</p>
+                <!-- <h3>Client 1</h3> -->
+            </div>
+            <div class="testimonial-slide">
+                <img src="../public/testimonial2.jpg" alt="Client 2">
+                <p>"The predictive analytics provided by Satcard are spot on. Highly recommend."</p>
+                <!-- <h3>Client 2</h3> -->
+            </div>
+            <div class="testimonial-slide">
+                <img src="../public/testimonial1.jpg" alt="Client 3">
+                <p>"Our yield has increased significantly since we started using Satcard's platform."</p>
+                <!-- <h3>Client 3</h3> -->
+            </div>
+            <!-- Add more testimonials as needed -->
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </section>
+
+   
+
+    <footer class="footer">
+        <div class="contact">
+            <div class = "icon-div">
+                <div class="icon_container">
+                    <img src="../public/phone.png" class="icon first-icon">
+                    <p class="detail-con phone_first">Phone</p>
+                    <p class="detail_value phone_first">2222222222</p>
+                </div>
+                <div class="icon_container">
+                    <img src="../public/email.png" class="icon">
+                    <p class="detail-con">Email</p>
+                    <p class="detail_value">abc@gmail.com</p>
+                </div>
+                <div class="icon_container">
+                    <img src="../public/locate.png" class="icon ca">
+                    <p class="detail-con">Office Location</p>
+                    <p class="detail_value">Palakkad, Kerala</p>
+                </div>
+               
+            </div>
+        </div>
+        <div class = "links">
+        
+        <div class ="links-div">
+            <div class="link_ele">
+                <img src ="../public/logo.png" class="logo-img">
+                 
+                
+                <div class = "revin-cont">
+                    <p class = "link-css-con logo-bel-con">Revin Krishi is a leading centre developing 
+                    efficient and affordable
+                    technological solutions in agriculture, with a vision to impact
+                    over 5 million farmers in India by 2030. Connect with us using the
+                    following below social media links</p>
+                    <!-- <p class = "link-css-con"></p> -->
+                    <div class="social-media">
+                        <a href= "https://www.facebook.com" target="_blank"><img src= "../public/facebook.png" class ="social-icon social-first"></a>
+                        <a href= "https://www.linkedin.com/company/satcard-smart-agritech-centre-for-advanced-research-and-development/" target="_blank"><img src= "../public/linkedIn.png" class ="social-icon social-first"></a>
+                        <a href= "https://www.instagram.com" target="_blank"><img src= "../public/instagram.png" class ="social-icon"></a>
+                        <a href= "https://www.twitter.com" target="_blank"><img src= "../public/twitter.png" class ="social-icon"></a>
+                    </div>
+                    </div>
+            </div>
+            <div class= "quick">
+                <div class="quick-links">
+                    <p class = "heading1">Quick Links</p>
+                    <a href= "#" class="links-click"><p class = "link-css link-first">Home</p></a>
+                    <a href= "#"  ><p class = "link-css">About</p></a>
+                    <a href= "#" ><p class = "link-css">Solutions</p></a>
+                    <a href= "#" ><p class = "link-css">Contact</p></a>
+                    <a href= "#" ><p class = "link-css">Crops</p></a>
+                    <a href= "#" ><p class = "link-css">Resource</p></a>
+                </div>
+            </div>
+            <div>
+                <div class="useful-links">
+                    <p class = "heading1" >Useful Links</p>
+                    <a href= "#"><p class = "link-css link-first">Terms and Conditions</p></a>
+                    <a href= "#"><p class = "link-css">Privacy Policy</p></a>
+                    <a href= "#"><p class = "link-css">FAQs</p></a>
+                    
+                </div>
+            </div>
+            <div class="download-links-div">
+                <div class="download-links">
+                    <p class = "heading1">Download App</p>
+                    <p class = "link-css-con link-first">For more convenience download our app
+                    from the links below</p>
+                    <a href= "#"><img src = "../public/apple.png" class ="down-img down-img-first"></a>
+                    <a href= "#"><img src = "../public/android.png" class ="down-img"></a>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class = "copy-div">
+            <p class = "copy">Copyright @ 2024 all rights reserved</p>
+        </div>
+        
+    </div>
+
+    
+    </footer>
+
+
+
+    <script>
+ //step 1: get DOM
+//  let nextDom = document.getElementById('next');
+//         let prevDom = document.getElementById('prev');
+
+//         let carouselDom = document.querySelector('.carousel');
+//         let SliderDom = carouselDom.querySelector('.carousel .list');
+//         let thumbnailBorderDom = document.querySelector('.carousel .thumbnail');
+//         let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll('.item');
+//         // let timeDom = document.querySelector('.carousel .time');
+//         let contentBoxDom = document.querySelector('.content-box .content');
+
+//         thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+//         let timeRunning = 1000;
+//         // let timeAutoNext = 7000;
+
+//         nextDom.onclick = function() {
+//             showSlider('next');
+//         }
+
+//         prevDom.onclick = function() {
+//             showSlider('prev');
+//         }
+//         let runTimeOut;
+//         // let runNextAuto = setTimeout(() => {
+//         //     next.click();
+//         // }, timeAutoNext)
+//         function showSlider(type) {
+//             let SliderItemsDom = SliderDom.querySelectorAll('.carousel .list .item');
+//             let thumbnailItemsDom = document.querySelectorAll('.carousel .thumbnail .item');
+
+//             if (type === 'next') {
+//                 SliderDom.appendChild(SliderItemsDom[0]);
+//                 thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+//                 carouselDom.classList.add('next');
+//             } else {
+//                 SliderDom.prepend(SliderItemsDom[SliderItemsDom.length - 1]);
+//                 thumbnailBorderDom.prepend(thumbnailItemsDom[thumbnailItemsDom.length - 1]);
+//                 carouselDom.classList.add('prev');
+//             }
+//             updateContentBox();
+//             clearTimeout(runTimeOut);
+//             runTimeOut = setTimeout(() => {
+//                 carouselDom.classList.remove('next');
+//                 carouselDom.classList.remove('prev');
+//             }, timeRunning);
+
+//             clearTimeout(runNextAuto);
+//             runNextAuto = setTimeout(() => {
+//                 next.click();
+//             }, timeAutoNext)
+//         }
+
+//         function updateContentBox() {
+//             let currentItem = SliderDom.querySelector('.carousel .list .item');
+//             let title = currentItem.getAttribute('data-title');
+//             let description = currentItem.getAttribute('data-description');
+
+//             contentBoxDom.querySelector('.title').innerText = title;
+//             contentBoxDom.querySelector('.description').innerText = description;
+//         }
+
+        // updateContentBox(); // Initialize content box with the first item
+
+        function changeImage(obj) {
+        let id = obj.id;  // Get the id of the clicked image
+        let items = document.querySelectorAll('.carousel .list .item');
+        let contentBoxDom = document.querySelector('.content-box .content');
+
+        items.forEach((item, index) => {
+            if ((index + 1) == id) {
+                item.style.display = 'block';  // Show the clicked image
+                let title = item.getAttribute('data-title');
+                let description = item.getAttribute('data-description');
+                contentBoxDom.querySelector('.title').innerText = title;
+                contentBoxDom.querySelector('.description').innerText = description;
+            } else {
+                item.style.display = 'none';  // Hide other images
+            }
+        });
+    }
+
+    </script>
+    <script src="../backend/script.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+        const anchorTags = document.querySelectorAll('footer a');
+        
+        anchorTags.forEach(anchor => {
+            anchor.addEventListener('mouseenter', () => {
+                anchor.classList.add('hover-effect');
+            });
+    
+            anchor.addEventListener('mouseleave', () => {
+                anchor.classList.remove('hover-effect');
+            });
+        });
+    });
+    </script>
+</body>
+</html>
