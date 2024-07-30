@@ -34,19 +34,21 @@ var apiKey = defaultClient.authentications['api-key'];
 apiKey.apiKey = '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';
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, '../views', 'aboutus.html'));
+  res.sendFile(path.join(__dirname, '../views', 'new_home.html'));
 });
 
 app.get("/about", (req, res) => {
-  res.sendFile("about.html");
+  res.sendFile(path.join(__dirname, '../views', 'aboutus.html'));
 });
 app.get("/contact", (req, res) => {
-  res.sendFile("contact.html");
+  res.sendFile(path.join(__dirname, '../views', 'contact.html'));
 });
-app.get("/solutions", (req, res) => {
-  res.sendFile("contact.html");
+app.get("/product1", (req, res) => {
+  res.sendFile(path.join(__dirname, '../views', 'product1.html'));
 });
-
+app.get("/product2", (req, res) => {
+  res.sendFile(path.join(__dirname, '../views', 'product2.html'));
+});
 app.post("/send-mail",async(req,res)=>{
   const apiInstance = new SibApiV3Sdk.TransactionalEmailsApi();
   const sender = {
@@ -55,7 +57,7 @@ app.post("/send-mail",async(req,res)=>{
   };
   const reciever = [
     {
-      email : "shivanandgarg1234@gmail.com",
+      email : "shivanandgarg1234@gmail.com", // wii be replaced by official satcard mail
     },
   ];
 

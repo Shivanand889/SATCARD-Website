@@ -5,40 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>System 1 - Revin Krishi</title>
     <script src="https://kit.fontawesome.com/427a1571ad.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../public/new_home.css">
-    <link rel="stylesheet" href="../public/product1.css">
+    <link rel="stylesheet" href="new_home.css">
+    <link rel="stylesheet" href="product1.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="../public/logo.png" alt="Satcard Logo">
+            <img src="logo.png" alt="Satcard Logo">
         </div>
-        <nav>
+        <!-- Dropdown icon for mobile screens -->
+        <div class = "nav1">
+            <a class="nav-btn "  href="/contact">Book Demo</a>
+        </div>
+        <div class="dropdown">
+            
+            <button class="dropbtn"><i class="fas fa-bars"></i></button>
+            <div class="dropdown-content">
+                <a href="/">Home</a>
+                <a href="/product1">System1</a>
+                <a href="/product2">System2</a>
+                
+                <a href="/about">About</a>
+                
+            </div>
+        </div>
+        <!-- Regular navigation for larger screens -->
+        <nav class = "nav">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li class="system-dropdown">
                     <a href="#">Systems</a>
                     <ul class="dropdown-content">
-                        <li><a href="#">System 1</a></li>
-                        <li><a href="#">System 2</a></li>
+                        <li><a href="/product1">System 1</a></li>
+                        <li><a href="/product2">System 2</a></li>
                     </ul>
                 </li>
-                <li><a href="#">About us</a></li>
+                <li><a href="/about">About us</a></li>
                 
             </ul>
-            <a class="nav-btn" href="#">Book Demo</a>
+            <a class="nav-btn" href="/contact">Book Demo</a>
         </nav>
     </header>
     <main>
         <section class="hero">
-            <img src="../public/product1.jpg" alt="Landscape">
+            <img src="product1.jpg" alt="Landscape">
             <div class="overlay">
                 <h1>System 1</h1>
             </div>
         </section>
         <section class="project-image">
-            <img src="../public/product3.jpg" alt="Tractor in Field">
-            <img src="../public/product3.jpg" alt="Tractor in Field">
+            <img src="product3.jpg" alt="Tractor in Field">
+            <img src="product3.jpg" alt="Tractor in Field">
         </section>
         <section class="content">
             <div class="project-details">
@@ -74,17 +91,17 @@
             <div class="contact">
                 <div class = "icon-div">
                     <div class="icon_container">
-                        <img src="../public/phone.png" class="icon first-icon">
+                        <img src="phone.png" class="icon first-icon">
                         <p class="detail-con phone_first">Phone</p>
                         <p class="detail_value phone_first">2222222222</p>
                     </div>
                     <div class="icon_container">
-                        <img src="../public/email.png" class="icon">
+                        <img src="email.png" class="icon">
                         <p class="detail-con">Email</p>
                         <p class="detail_value">abc@gmail.com</p>
                     </div>
                     <div class="icon_container">
-                        <img src="../public/locate.png" class="icon ca">
+                        <img src="locate.png" class="icon ca">
                         <p class="detail-con">Office Location</p>
                         <p class="detail_value">Palakkad, Kerala</p>
                     </div>
@@ -95,7 +112,7 @@
             
             <div class ="links-div">
                 <div class="link_ele">
-                    <img src ="../public/logo.png" class="logo-img">
+                    <img src ="logo.png" class="logo-img">
                      
                     
                     <div class = "revin-cont">
@@ -106,10 +123,10 @@
                         following below social media links</p>
                         <!-- <p class = "link-css-con"></p> -->
                         <div class="social-media">
-                            <a href= "https://www.facebook.com" target="_blank"><img src= "../public/facebook.png" class ="social-icon social-first"></a>
-                            <a href= "https://www.linkedin.com/company/satcard-smart-agritech-centre-for-advanced-research-and-development/" target="_blank"><img src= "../public/linkedIn.png" class ="social-icon social-first"></a>
-                            <a href= "https://www.instagram.com" target="_blank"><img src= "../public/instagram.png" class ="social-icon"></a>
-                            <a href= "https://www.twitter.com" target="_blank"><img src= "../public/twitter.png" class ="social-icon"></a>
+                            <a href= "https://www.facebook.com" target="_blank"><img src= "facebook.png" class ="social-icon social-first"></a>
+                            <a href= "https://www.linkedin.com/company/satcard-smart-agritech-centre-for-advanced-research-and-development/" target="_blank"><img src= "linkedIn.png" class ="social-icon social-first"></a>
+                            <a href= "https://www.instagram.com" target="_blank"><img src= "instagram.png" class ="social-icon"></a>
+                            <a href= "https://www.twitter.com" target="_blank"><img src= "twitter.png" class ="social-icon"></a>
                         </div>
                         </div>
                 </div>
@@ -138,8 +155,8 @@
                         <p class = "heading1">Download App</p>
                         <p class = "link-css-con link-first">For more convenience download our app
                         from the links below</p>
-                        <a href= "#"><img src = "../public/apple.png" class ="down-img down-img-first"></a>
-                        <a href= "#"><img src = "../public/android.png" class ="down-img"></a>
+                        <a href= "#"><img src = "apple.png" class ="down-img down-img-first"></a>
+                        <a href= "#"><img src = "android.png" class ="down-img"></a>
                         
                         
                     </div>

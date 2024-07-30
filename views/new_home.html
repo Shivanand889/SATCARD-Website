@@ -6,35 +6,52 @@
     <script src="https://kit.fontawesome.com/427a1571ad.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/0c8555221c.js" crossorigin="anonymous"></script>
     <title>Home - Revin Krishi</title>
-    <link rel="stylesheet" href="../public/new_home.css">
-    <link rel="stylesheet" href="../public/impact.css">
+    <link rel="stylesheet" href="new_home.css">
+    <link rel="stylesheet" href="impact.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="../public/logo.png" alt="Satcard Logo">
+            <img src="logo.png" alt="Satcard Logo">
         </div>
-        <nav>
+        <!-- Dropdown icon for mobile screens -->
+        <div class = "nav1">
+            <a class="nav-btn "  href="/contact">Book Demo</a>
+        </div>
+        <div class="dropdown">
+            
+            <button class="dropbtn"><i class="fas fa-bars"></i></button>
+            <div class="dropdown-content">
+                <a href="/">Home</a>
+                <a href="/product1">System1</a>
+                <a href="/product2">System2</a>
+                
+                <a href="/about">About</a>
+                
+            </div>
+        </div>
+        <!-- Regular navigation for larger screens -->
+        <nav class = "nav">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li class="system-dropdown">
                     <a href="#">Systems</a>
                     <ul class="dropdown-content">
-                        <li><a href="#">System 1</a></li>
-                        <li><a href="#">System 2</a></li>
+                        <li><a href="/product1">System 1</a></li>
+                        <li><a href="/product2">System 2</a></li>
                     </ul>
                 </li>
-                <li><a href="#">About us</a></li>
+                <li><a href="/about">About us</a></li>
                 
             </ul>
-            <a class="nav-btn" href="#">Book Demo</a>
+            <a class="nav-btn" href="/contact">Book Demo</a>
         </nav>
     </header>
     
 
     <section class="hero">
         <video autoplay muted loop plays-inline id="myvideo">
-            <source src="../public/drone_video.mp4" type="video/mp4">
+            <source src="drone_video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <div class="hero-content">
@@ -105,32 +122,32 @@
             <div class="slider-container">
                 <div class="list">
                     <div class="item" data-title="Title 1" data-description="Description 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quidem inventore itaque? Totam et veritatis sunt illum qui temporibus tempora? Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, sint. Odio ullam dicta id, maxime molestias rem debitis dolores iure!">
-                        <img src="../public/system1.jpg">
+                        <img src="system1.jpg">
                     </div>
                     <div class="item" data-title="Title 2" data-description="Description 2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis doloribus nulla at inventore illo officiis optio! Magni, repudiandae modi quia libero recusandae ipsam rerum harum labore provident architecto laboriosam reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, sint. Odio ullam dicta id, maxime molestias rem debitis dolores iure!">
-                        <img src="../public/system2.jpg">
+                        <img src="system2.jpg">
                     </div>
                     <div class="item" data-title="Title 3" data-description="Description 3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis doloribus nulla at inventore illo officiis optio! Magni, repudiandae modi quia libero recusandae ipsam rerum harum labore provident architecto laboriosam reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, sint. Odio ullam dicta id, maxime molestias rem debitis dolores iure!">
-                        <img src="../public/system3.jpg">
+                        <img src="system3.jpg">
                     </div>
                 </div>
                 <div class="thumbnail">
                     <div class="item">
-                        <img src="../public/system1.jpg" id = "1" onclick = "changeImage(this)">
+                        <img src="system1.jpg" id = "1" onclick = "changeImage(this)">
                         <div class="content">
                             <div class="title">Name Slider</div>
                             <div class="description">Description</div>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="../public/system2.jpg"  id = "2" onclick = "changeImage(this)">
+                        <img src="system2.jpg"  id = "2" onclick = "changeImage(this)">
                         <div class="content">
                             <div class="title">Name Slider</div>
                             <div class="description">Description</div>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="../public/system3.jpg" id = "3" onclick = "changeImage(this)">
+                        <img src="system3.jpg" id = "3" onclick = "changeImage(this)">
                         <div class="content">
                             <div class="title">Name Slider</div>
                             <div class="description">Description</div>
@@ -198,35 +215,35 @@
         <p>Delivering top-notch business results requires high-quality, accurate data. Look no further. Whatever your goal, Revin Krishi can help you achieve your desired outcome.</p>
         <div class="service-icons-container">
             <div class="service-icon-item">
-                <img src="../public/accelerate-icon.svg" alt="Accelerate R&D">
+                <img src="accelerate-icon.svg" alt="Accelerate R&D">
                 <p>Accelerate R&D</p>
             </div>
             <div class="service-icon-item">
-                <img src="../public/power-icon.svg" alt="Power Agronomic Advice">
+                <img src="power-icon.svg" alt="Power Agronomic Advice">
                 <p>Power Agronomic Advice</p>
             </div>
             <div class="service-icon-item">
-                <img src="../public/streamline-icon.svg" alt="Streamline Food Supply Chain">
+                <img src="streamline-icon.svg" alt="Streamline Food Supply Chain">
                 <p>Streamline Food Supply Chain</p>
             </div>
             <div class="service-icon-item">
-                <img src="../public/verify-icon.svg" alt="Verify Sustainability Impact">
+                <img src="verify-icon.svg" alt="Verify Sustainability Impact">
                 <p>Verify Sustainability Impact</p>
             </div>
             <div class="service-icon-item">
-                <img src="../public/maximize-icon.svg" alt="Maximize Yield & Quality">
+                <img src="maximize-icon.svg" alt="Maximize Yield & Quality">
                 <p>Maximize Yield & Quality</p>
             </div>
             <div class="service-icon-item">
-                <img src="../public/optimize-icon.svg" alt="Optimize Water & Nutrients">
+                <img src="optimize-icon.svg" alt="Optimize Water & Nutrients">
                 <p>Optimize Water & Nutrients</p>
             </div>
             <div class="service-icon-item">
-                <img src="../public/reduce-icon.svg" alt="Reduce Pesticide Use">
+                <img src="reduce-icon.svg" alt="Reduce Pesticide Use">
                 <p>Reduce Pesticide Use</p>
             </div>
             <div class="service-icon-item">
-                <img src="../public/manage-icon.svg" alt="Manage Farm Logistics">
+                <img src="manage-icon.svg" alt="Manage Farm Logistics">
                 <p>Manage Farm Logistics</p>
             </div>
         </div>
@@ -236,17 +253,17 @@
         <h2>What Our Clients Say</h2>
         <div class="testimonial-slider">
             <div class="testimonial-slide">
-                <img src="../public/testimonial1.jpg" alt="Client 1">
+                <img src="testimonial1.jpg" alt="Client 1">
                 <p>"Satcard has revolutionized our farming practices with their advanced data insights."</p>
                 <!-- <h3>Client 1</h3> -->
             </div>
             <div class="testimonial-slide">
-                <img src="../public/testimonial2.jpg" alt="Client 2">
+                <img src="testimonial2.jpg" alt="Client 2">
                 <p>"The predictive analytics provided by Satcard are spot on. Highly recommend."</p>
                 <!-- <h3>Client 2</h3> -->
             </div>
             <div class="testimonial-slide">
-                <img src="../public/testimonial1.jpg" alt="Client 3">
+                <img src="testimonial1.jpg" alt="Client 3">
                 <p>"Our yield has increased significantly since we started using Satcard's platform."</p>
                 <!-- <h3>Client 3</h3> -->
             </div>
@@ -262,17 +279,17 @@
         <div class="contact">
             <div class = "icon-div">
                 <div class="icon_container">
-                    <img src="../public/phone.png" class="icon first-icon">
+                    <img src="phone.png" class="icon first-icon">
                     <p class="detail-con phone_first">Phone</p>
                     <p class="detail_value phone_first">2222222222</p>
                 </div>
                 <div class="icon_container">
-                    <img src="../public/email.png" class="icon">
+                    <img src="email.png" class="icon">
                     <p class="detail-con">Email</p>
                     <p class="detail_value">abc@gmail.com</p>
                 </div>
                 <div class="icon_container">
-                    <img src="../public/locate.png" class="icon ca">
+                    <img src="locate.png" class="icon ca">
                     <p class="detail-con">Office Location</p>
                     <p class="detail_value">Palakkad, Kerala</p>
                 </div>
@@ -283,7 +300,7 @@
         
         <div class ="links-div">
             <div class="link_ele">
-                <img src ="../public/logo.png" class="logo-img">
+                <img src ="logo.png" class="logo-img">
                  
                 
                 <div class = "revin-cont">
@@ -294,10 +311,10 @@
                     following below social media links</p>
                     <!-- <p class = "link-css-con"></p> -->
                     <div class="social-media">
-                        <a href= "https://www.facebook.com" target="_blank"><img src= "../public/facebook.png" class ="social-icon social-first"></a>
-                        <a href= "https://www.linkedin.com/company/satcard-smart-agritech-centre-for-advanced-research-and-development/" target="_blank"><img src= "../public/linkedIn.png" class ="social-icon social-first"></a>
-                        <a href= "https://www.instagram.com" target="_blank"><img src= "../public/instagram.png" class ="social-icon"></a>
-                        <a href= "https://www.twitter.com" target="_blank"><img src= "../public/twitter.png" class ="social-icon"></a>
+                        <a href= "https://www.facebook.com" target="_blank"><img src= "facebook.png" class ="social-icon social-first"></a>
+                        <a href= "https://www.linkedin.com/company/satcard-smart-agritech-centre-for-advanced-research-and-development/" target="_blank"><img src= "linkedIn.png" class ="social-icon social-first"></a>
+                        <a href= "https://www.instagram.com" target="_blank"><img src= "instagram.png" class ="social-icon"></a>
+                        <a href= "https://www.twitter.com" target="_blank"><img src= "twitter.png" class ="social-icon"></a>
                     </div>
                     </div>
             </div>
@@ -326,8 +343,8 @@
                     <p class = "heading1">Download App</p>
                     <p class = "link-css-con link-first">For more convenience download our app
                     from the links below</p>
-                    <a href= "#"><img src = "../public/apple.png" class ="down-img down-img-first"></a>
-                    <a href= "#"><img src = "../public/android.png" class ="down-img"></a>
+                    <a href= "#"><img src = "apple.png" class ="down-img down-img-first"></a>
+                    <a href= "#"><img src = "android.png" class ="down-img"></a>
                     
                     
                 </div>
