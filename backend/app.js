@@ -50,6 +50,9 @@ app.get("/product2", (req, res) => {
   res.sendFile(path.join(__dirname, '../views', 'product2.html'));
 });
 app.post("/send-mail",async(req,res)=>{
+
+  var s = "" ;
+  s= "Name :" + req.body.name +"\n" + "Email :" + req.body.email +"\n" + "Phone :" + req.body.phone + "\n"+ "Message :" +req.body.message ;  
   const apiInstance = new SibApiV3Sdk.TransactionalEmailsApi();
   const sender = {
       email : "shivqe74158@gmail.com" ,
@@ -66,13 +69,14 @@ app.post("/send-mail",async(req,res)=>{
       sender,
       to : reciever ,
       subject : "Revin Krihi Notification",
-      textContent :" test",
+      textContent :s,
 
     });
     console.log("success") ;
-    
+    res.redirect("/contact") ;
   }
   catch(err){
+    res.redirect("/contact") ;
     return res.send(err) ;
   };
 });

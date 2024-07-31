@@ -19,7 +19,7 @@ body, html{
 
 
 .background_image {
-    background-image: url('../public/cont-us.jpg');
+    background-image: url('cont-us.jpg');
     height: 80vh;
     background-position: center;
     background-repeat: no-repeat;

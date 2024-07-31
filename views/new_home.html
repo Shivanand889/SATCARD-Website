@@ -57,7 +57,7 @@
         <div class="hero-content">
             <h1>Next Gen Agri Intelligence Platform</h1>
             <p>Data Backed Agriculture Solutions</p>
-            <a class="hero-btn" href="#">Book Demo</a>
+            <a class="hero-btn" href="/contact">Book Demo</a>
         </div>
        
     </section>
@@ -215,35 +215,35 @@
         <p>Delivering top-notch business results requires high-quality, accurate data. Look no further. Whatever your goal, Revin Krishi can help you achieve your desired outcome.</p>
         <div class="service-icons-container">
             <div class="service-icon-item">
-                <img src="accelerate-icon.svg" alt="Accelerate R&D">
+                <img src="accelerate-icon.jpg" alt="Accelerate R&D">
                 <p>Accelerate R&D</p>
             </div>
             <div class="service-icon-item">
-                <img src="power-icon.svg" alt="Power Agronomic Advice">
+                <img src="power-icon.jpg" alt="Power Agronomic Advice">
                 <p>Power Agronomic Advice</p>
             </div>
             <div class="service-icon-item">
-                <img src="streamline-icon.svg" alt="Streamline Food Supply Chain">
+                <img src="streamline-icon.jpg" alt="Streamline Food Supply Chain">
                 <p>Streamline Food Supply Chain</p>
             </div>
             <div class="service-icon-item">
-                <img src="verify-icon.svg" alt="Verify Sustainability Impact">
+                <img src="verify-icon.jpg" alt="Verify Sustainability Impact">
                 <p>Verify Sustainability Impact</p>
             </div>
             <div class="service-icon-item">
-                <img src="maximize-icon.svg" alt="Maximize Yield & Quality">
+                <img src="maximize-icon.jpg" alt="Maximize Yield & Quality">
                 <p>Maximize Yield & Quality</p>
             </div>
             <div class="service-icon-item">
-                <img src="optimize-icon.svg" alt="Optimize Water & Nutrients">
+                <img src="optimize-icon.jpg" alt="Optimize Water & Nutrients">
                 <p>Optimize Water & Nutrients</p>
             </div>
             <div class="service-icon-item">
-                <img src="reduce-icon.svg" alt="Reduce Pesticide Use">
+                <img src="reduce-icon.jpg" alt="Reduce Pesticide Use">
                 <p>Reduce Pesticide Use</p>
             </div>
             <div class="service-icon-item">
-                <img src="manage-icon.svg" alt="Manage Farm Logistics">
+                <img src="manage-icon.jpg" alt="Manage Farm Logistics">
                 <p>Manage Farm Logistics</p>
             </div>
         </div>
@@ -444,7 +444,36 @@
     }
 
     </script>
-    <script src="../backend/script.js"></script>
+    <script src="../backend/script.js">
+
+    </script>
+    <script>
+        let testimonialIndex = 0;
+
+function showTestimonialSlides() {
+    const slides = document.querySelectorAll('.testimonial-slide');
+    slides.forEach((slide, index) => {
+        slide.style.transform = `translateX(${-testimonialIndex * 100}%)`;
+    });
+}
+
+function nextSlide() {
+    const slides = document.querySelectorAll('.testimonial-slide');
+    testimonialIndex = (testimonialIndex + 1) % slides.length;
+    showTestimonialSlides();
+}
+
+function prevSlide() {
+    const slides = document.querySelectorAll('.testimonial-slide');
+    testimonialIndex = (testimonialIndex - 1 + slides.length) % slides.length;
+    showTestimonialSlides();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    showTestimonialSlides();
+    setInterval(nextSlide, 5000); // Change slide every 5 seconds
+});
+</script>
     <script>
         const swiper = new Swiper('.swiper-container', {
             loop: true,

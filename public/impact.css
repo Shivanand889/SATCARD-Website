@@ -15,10 +15,10 @@ body, html {
     overflow: hidden;
     position: relative;
     height: 100%;
-    /* margin-top: 100px; */
     width: 100%;
-    margin-left: 100px;
-    /* border-style: dashed; */
+    -webkit-mask-image: linear-gradient(180deg, transparent, #fff 20%, #fff 80%, transparent);
+    /* margin-left: 100px; */
+    /* margin-right: 30px; */
 }
 
 .metrics {
@@ -27,10 +27,7 @@ body, html {
     position: absolute;
     width: 700px;
     margin-left: 100px;
-    /* margin-left: 25px ; */
-    /* border-style: dashed; */
     animation: scroll 10s  infinite;
-    /* transition: animation 0.5s ease; */
     animation-delay: calc(3s * var(--delay));
     
     
@@ -38,38 +35,37 @@ body, html {
 
 .metric-name {
     display: flex;
-    justify-content: center;  /* Horizontal centering of content */
-    align-items: center;      /* Vertical centering of content */
+    justify-content: center;  
+    align-items: center;      
     margin-left: 50px;
-    height: 180px;
-    width: 155px;
+    height: 150px;
+    width: 200px;
     margin-top: 30px;
-    
-    text-align: center;       /* Ensures text inside the paragraph is centered */
-    
-    border-radius: 35px;
+    text-align: center;      
+    border-radius: 20px;
+}
+/* color: #393871;
+color:#10afab;
+color:#a9cf46; */
+ .m1{
+    background-color: #8484a5;
+}
+.m2{
+    background-color: #659a98;
+}
+.m3{
+    background-color: #b2c680;
+}
+ .m4{
+    background-color: rgb(114, 139, 114);
+}
+ .m5{
+    background-color: rgb(128, 152, 162);
 }
 
-.metrics .m1{
-    background-color: blue;
-    /* border : 5px solid rgb(47, 0, 255) ; */
-}
-.metrics .m2{
-    background-color: orangered;
-}
-.metrics .m3{
-    background-color: red;
-}
-.metrics .m4{
-    background-color: green;
-}
-.metrics .m5{
-    background-color: skyblue;
-}
 .metric-name p {
-    
-    font-size: 25px;
-    
+    font-size: 20px;
+    padding: 8px;
 }
 
 @keyframes scroll {
@@ -119,49 +115,10 @@ body, html {
     margin-left: 400px;
     width: 200px;
     justify-content: space-between;
-    /* border-style: dashed; */
     animation: scroll-reverse 10s  infinite;
     animation-delay: calc(3s * var(--delay));
 }
 
-.metric-value {
-    display: flex;
-    justify-content: center;  /* Horizontal centering of content */
-    align-items: center;      /* Vertical centering of content */
-    margin-left: 50px;
-    height: 180px;
-    width: 155px;
-    margin-top: 30px;
-    /* border-style: dashed; */
-    text-align: center;       /* Ensures text inside the paragraph is centered */
-    
-    border-radius: 35px;
-}
-
-.met-val .m3{
-    background-color: blue;
-}
-.met-val .m2{
-    background-color: orangered;
-}
-.met-val .m1{
-    background-color: red;
-}
-.met-val .m5{
-    background-color: green;
-}
-.met-val .m4{
-    background-color: skyblue;
-}
-.metric-name p {
-    
-    font-size: 25px;
-    
-}
-
-.metric-value p {
-    font-size: 40px;
-}
 
 @keyframes scroll-reverse {
     0% {
@@ -201,66 +158,13 @@ body, html {
     }
 }
 
-.highlight{
-    position: absolute;
-    height : 60px ;
-    margin-top: 240px ;
-    width:100% ;
-    /* border-style: dashed; */
-    /* background-color: rgba(212, 243, 229, 0.623); */
-    z-index: -2;
-    
-}
-
-.highlight-top{
-    position: absolute;
-    height : 90px ;
-    /* margin-top: 90px ; */
-    width:100% ;
-    /* border-style: dashed; */
-    /* background-color: whitesmoke; */
-    z-index: -1;
-}
-.highlight-bottom{
-    position: absolute;
-    margin-top: 160px;
-    height : 90px ;
-    /* margin-top: 90px ; */
-    width:100% ;
-    /* border-style: dashed; */
-    /* background-color: whitesmoke; */
-    z-index: -1;
-}
-.highlight-top1{
-    position: absolute;
-    height : 40px ;
-    /* margin-top: 90px ; */
-    width:100% ;
-    /* border-style: dashed; */
-    /* background-color: rgba(245, 245, 245, 0.692); */
-    /* z-index: 1; */
-}
-.highlight-bottom1{
-    position: absolute;
-    margin-top: 530px;
-    height : 20px ;
-    /* margin-top: 90px ; */
-    width:100% ;
-    /* border-style: dashed; */
-    /* background-color: rgba(232, 247, 197, 0.973);; */
-    z-index: 1;
-}
 .All-impact{
     height : 650px ;
-    /* border-style: dashed; */
     display: flex;
     background-color: whitesmoke;
-    /* background-color: #2F4F4F; */
-     /* background-image: url('../public/grass4.jpg'); */
-     background-size: cover;
-     background-position: center;
-     background-repeat: no-repeat;
-
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .imp-detail{
     width :80%;
