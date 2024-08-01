@@ -334,12 +334,23 @@ header .logo img {
     border-radius: 10px;
 }
 
+.inverted-comma{
+    font-size: 90px;
+    
+    margin-top: -50px;
+}
 
+.inverted-icon p{
+    /* display: flex; */
+    color: orange;
+}
 /* Systems Section */
 
 .systems{
     padding: 30px 5px;
     /* margin: 20px 5px; */
+    background: #E6F4EA;
+    margin-bottom: 20px;
     /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); */
 }
 
@@ -587,7 +598,7 @@ header .logo img {
 /* Testimonials Section */
 .testimonials {
     padding: 50px 20px;
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
     text-align: center;
     position: relative;
 }
@@ -1022,14 +1033,33 @@ button.next {
 }
 
 .about-section-content{
-    padding: 10px;
-    border: 1px solid black;
-    border-radius: 15px;
+    padding: 10px 20px;
+    /* border: 1px solid black; */
+    /* border-radius: 15px; */
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: #f9f9f9;
+    
 }
 
 .about-section p {
     line-height: 1.6;
     color: #333;
+}
+.inverted-comma{
+    font-size: 100px;
+    
+    /* margin-top: px; */
+}
+
+.inverted-icon{
+   margin-bottom: -100px;
+}
+.inverted-icon p{
+    /* display: flex; */
+    color: orange;
+    margin-left: -40px;
 }
 
 
@@ -1133,6 +1163,7 @@ accordion:hover .data-card{
     width: 100%;
     /* height: 350px; */
     text-align: center;
+    background: #E6F4EA;
     padding: 50px 20px;
     /* margin-top: 150px; */
     /* background-color: #f6f8fa; */
@@ -1209,9 +1240,9 @@ accordion:hover .data-card{
 .client-in ul li:hover img:nth-child(1){
     transform: translateY(-100%);
     transition: .5s;
-}
+} 
 
-.client-in ul li:hover img:nth-child(2){
+ .client-in ul li:hover img:nth-child(2){
     transform: translateY(-100%);
     transition: .5s;
 }

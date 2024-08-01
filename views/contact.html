@@ -102,6 +102,30 @@
                         <i class="fa fa-phone"></i>
                         <input type="tel" placeholder="Phone" name = "phone">
                     </div>
+                    <!-- <div class="input-field"> -->
+                        
+                        <div class="multi-select">
+                            <div class="select-box" onclick="toggleDropdown()">
+                                <i class="fas fa-list"></i>
+                                <span class="selected" type = "Select">Select Options</span>
+                                <i class="fas fa-caret-down dropdown-icon"></i>
+                            </div>
+                            <div class="checkboxes" id="checkboxes">
+                                <label>
+                                    <input type="checkbox" name="interests" value="option1" >
+                                    Option 1
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="interests" value="option2">
+                                    Option 2
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="interests" value="option3">
+                                    Option 3
+                                </label>
+                            </div>
+                        </div>
+                    <!-- </div> -->
                     <div class="textarea">
                         <textarea placeholder="Message" name="message" class="input"></textarea>
                         <button type = "submit" class="contact-btn nav-btn">Send Message</input>
@@ -195,4 +219,17 @@
     </footer>
 
 </body>
+<script>
+    // <script>
+function toggleDropdown() {
+    var checkboxes = document.getElementById("checkboxes");
+    if (checkboxes.style.display === "block") {
+        checkboxes.style.display = "none";
+    } else {
+        checkboxes.style.display = "block";
+    }
+}
+
+
+</script>
 </html>

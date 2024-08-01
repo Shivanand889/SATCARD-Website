@@ -19,6 +19,7 @@ body, html{
 
 
 .background_image {
+
     background-image: url('cont-us.jpg');
     height: 80vh;
     background-position: center;
@@ -54,7 +55,8 @@ body, html{
 /* Contact US Form*/
 
 .contact-container{
-    position: relative;
+    z-index: -1;
+    /* position: relative; */
     width: 100%;
     min-height: 100vh;
     padding: 2rem;
@@ -63,12 +65,14 @@ body, html{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 65px;
   }
 
   .contact-div{
+    margin-top: 70px;
     width: 100%;
     max-width: 1000px;
-    height: 518px;
+    height: auto;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
@@ -246,11 +250,12 @@ body, html{
 
 .big-circle {
   position: absolute;
+  /* margin-top: 70px; */
   width: 500px;
   height: 500px;
   border-radius: 50%;
   background: linear-gradient(to bottom, #c3dbd6, #9dd1c6);
-  bottom: 50%;
+  bottom: 17%;
   right: 50%;
   transform: translate(-40%, 38%);
 }
@@ -398,6 +403,76 @@ body, html{
 }
 
 
+.multi-select {
+  position: relative;
+  width: 100%;
+}
+
+.selected{
+  /* margin-left: 50px; */
+  font-weight: 600;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+
+.select-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  cursor: pointer;
+  max-width: 380px;
+  height: 55px;
+  background-color: #fff;
+  margin: 10px 0;
+  padding: 0 0.4rem;
+  border-radius: 55px;
+}
+
+.select-box span{
+  color :#aaa ;
+  font-weight: 500;
+}
+
+.fas{
+  color : #acacac ;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-left: 10px;
+}
+.dropdown-icon {
+  margin-left: auto;
+}
+
+.checkboxes {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.checkboxes label {
+  display: block;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.checkboxes label:hover {
+  background-color: #f0f0f0;
+}
+
+.checkboxes input[type="checkbox"] {
+  margin-right: 10px;
+}
 
 
 
