@@ -1134,7 +1134,7 @@ accordion:hover .data-card{
     /* height: 350px; */
     text-align: center;
     padding: 50px 20px;
-    margin-top: 150px;
+    /* margin-top: 150px; */
     /* background-color: #f6f8fa; */
     /* margin-bottom: 10px; */
   }
@@ -1231,4 +1231,68 @@ accordion:hover .data-card{
     100%{
       transform: translate3d(-1100px, 0, 0);
     }
+}
+
+
+
+
+/* how it works */
+
+.how-it-works {
+    text-align: center;
+    padding: 50px 20px;
+    margin: 120px 30px 10px 23px;
+}
+
+.how-it-works h2{
+    font-size: 2.3rem;
+    margin: 10px;
+    padding: 10px;
+}
+.steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.step {
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    flex: 0 1 30%;
+    margin: 10px;
+    /* padding: 20px; */
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px; /* Set a consistent height */
+}
+.step img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px; /* Ensure images have the same height */
+    object-fit: cover;
+    border-radius: 8px;
+}
+.step h3 {
+    color: #2d6a4f;
+    margin: 15px 0;
+}
+.step p {
+    margin: 0 5px;
+    color: #333;
+    font-size: 16px;
+    flex-grow: 1;
+}
+.step a {
+    margin-bottom: 10px;
+    display: inline-block;
+    margin: 10px;
+    color: #2d6a4f;
+    text-decoration: none;
+    font-weight: bold;
+}
+.step:hover {
+    transform: scale(1.05);
 }

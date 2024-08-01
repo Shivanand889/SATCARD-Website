@@ -27,7 +27,7 @@ body, html {
     position: absolute;
     width: 700px;
     margin-left: 100px;
-    animation: scroll 10s  infinite;
+    animation: scroll 10s infinite;
     animation-delay: calc(3s * var(--delay));
     
     
@@ -47,21 +47,24 @@ body, html {
 /* color: #393871;
 color:#10afab;
 color:#a9cf46; */
+/* color: a4cecd */
+/* color:ffec4e */
+/* color: bfe063 */
  .m1{
-    background-color: #8484a5;
+    background-color: #a4cecd;
 }
 .m2{
-    background-color: #659a98;
+    background-color: #ffec4e;
 }
 .m3{
-    background-color: #b2c680;
+    background-color: #bfe063;
 }
  .m4{
-    background-color: rgb(114, 139, 114);
+    background-color: #a4cecd;
 }
  .m5{
-    background-color: rgb(128, 152, 162);
-}
+    background-color: #ffec4e;
+ }
 
 .metric-name p {
     font-size: 20px;
