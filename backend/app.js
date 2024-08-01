@@ -49,39 +49,58 @@ app.get("/product1", (req, res) => {
 app.get("/product2", (req, res) => {
   res.sendFile(path.join(__dirname, '../views', 'product2.html'));
 });
-app.post("/send-mail",async(req,res)=>{
+app.get("/product3", (req, res) => {
+  res.sendFile(path.join(__dirname, '../views', 'product3.html'));
+});
+app.post("/send-mail", async (req, res) => {
+  // Extract form data
+  const name = req.body.name;
+  const email = req.body.email;
+  const phone = req.body.phone;
+  const message = req.body.message;
 
-  var s = "" ;
-  s= "Name :" + req.body.name +"\n" + "Email :" + req.body.email +"\n" + "Phone :" + req.body.phone + "\n"+ "Message :" +req.body.message ;  
+  // Extract checkbox values (interests)
+  const interestsArray = req.body.interests;
+  let interests = "Interest: ";
+  if (Array.isArray(interestsArray)) {
+      interests += interestsArray.join(", ");
+  } else if (interestsArray) {
+      interests += interestsArray; // if only one checkbox is checked
+  } else {
+      interests += "None"; // if no checkbox is checked
+  }
+
+  // Construct the email content
+  const emailContent = `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n${interests}\nMessage: ${message}`;
+
   const apiInstance = new SibApiV3Sdk.TransactionalEmailsApi();
   const sender = {
-      email : "shivqe74158@gmail.com" ,
-      name : "Revin",
+      email: "shivqe74158@gmail.com",
+      name: "Revin",
   };
-  const reciever = [
-    {
-      email : "shivanandgarg1234@gmail.com", // wii be replaced by official satcard mail
-    },
+  const receiver = [
+      {
+          email: "shivanandgarg1234@gmail.com", // will be replaced by official Satcard email
+      },
   ];
 
-  try{
-    const sendEmail = await apiInstance.sendTransacEmail({
-      sender,
-      to : reciever ,
-      subject : "Revin Krihi Notification",
-      textContent :s,
-
-    });
-    console.log("success") ;
-    res.redirect("/contact") ;
+  try {
+      await apiInstance.sendTransacEmail({
+          sender,
+          to: receiver,
+          subject: "Revin Krishi Notification",
+          textContent: emailContent,
+      });
+      console.log("Email sent successfully");
+      res.redirect("/contact");
+  } catch (err) {
+      console.error("Error sending email:", err);
+      res.status(500).send("An error occurred while sending the email.");
   }
-  catch(err){
-    res.redirect("/contact") ;
-    return res.send(err) ;
-  };
 });
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3000 ;
+
 app.listen(port, () => {
-  console.log(`Server is running on  http://localhost:${port}/`);
+  console.log(`Server is running on http://localhost:${port}/`);
 });
