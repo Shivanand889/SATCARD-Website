@@ -17,7 +17,6 @@ body, html{
     background-color: #fff;
 }
 
-
 .background_image {
 
     background-image: url('cont-us.jpg');
@@ -138,7 +137,6 @@ body, html{
      margin-bottom: 0.7rem;
      font-size: 2.2rem;
      color: #444;
-     /* margin-bottom: 10px; */
   }
 
   textarea.input{
@@ -150,8 +148,6 @@ body, html{
     resize: none;
     overflow-y: hidden;
     width: 370px;
-    /* background-color: #f0f0f0; */
-    
   }
 
   .textarea textarea::placeholder{
@@ -160,12 +156,13 @@ body, html{
 }
 
 .contact-btn{
+  margin: 10px 10px 0 0;
+  border: 2px solid #10afab;
   background-color: #10afab;
   color: #fff;
 
 }
 .contact-btn:hover {
-  /* background-color: transparent; */
   color: #10afab;
   border: 2px solid #10afab;
 }
@@ -206,35 +203,6 @@ body, html{
 .information p{
   font-size: 1.25rem;
 }
-
-/* .social-media{
-  padding: 2rem 0 0 0;
-}
-
-.social-media p{
-  color: #333;
-  font-size: 1.35rem;
-}
-
-.social-icons{
-  display: flex;
-  margin-top: 0.5rem;
-}
-.social-icons a{
-  width: 35px;
-  height: 35px;
-  border-radius: 5px;
-  background: linear-gradient(45deg, #5995fd, #4d84e2);
-  color: #fff;
-  text-align: center;
-  line-height: 35px;
-  margin-right: 0.5rem;
-  transition: 0.3s;
-}
-
-.social-icons a:hover {
-  transform: scale(1.05);
-} */
 
 .contact-info:before {
   content: "";
@@ -282,7 +250,7 @@ body, html{
 
 .input-field{
     max-width: 380px;
-    width: 100%;
+    /* width: 100%; */
     height: 55px;
     background-color: #fff;
     margin: 10px 0;
@@ -319,6 +287,7 @@ body, html{
 @media (max-width: 850px) {
   .contact-div {
     grid-template-columns: 1fr;
+    z-index: revert-layer;
   }
 
   .contact-info:before {
@@ -376,11 +345,17 @@ body, html{
   .text,
   .information,
   .social-media p {
-    font-size: 0.8rem;
+    font-size: 1rem;
+    margin: 0 20px 0 0;
+  }
+
+  
+  .information p {
+    font-size: 1rem;
   }
 
   .title {
-    font-size: 1.15rem;
+    font-size: 1.6rem;
   }
 
   .social-icons a {
@@ -393,19 +368,36 @@ body, html{
     width: 23px;
   }
 
-  .input {
-    padding: 0.45rem 1.2rem;
+  .contact-title{
+    font-size: 1.6rem;
   }
 
-  .btn {
+  .input-field{
+    margin-right: 25px;
+  }
+
+  .select-box{
+    width: 93%;
+  }
+
+  .checkboxes{
+    width: 93%;
+  }
+
+  .textarea .input {
+    width: 305px;
+  }
+
+  .contact-btn {
     padding: 0.45rem 1.2rem;
+    border-radius: 10px;
   }
 }
 
 
-.multi-select {
+ .multi-select {
   position: relative;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .selected{
