@@ -374,22 +374,22 @@ header .logo img {
     }
 
     .hero-content{
-        position: absolute;
-        bottom: 0;
+        /* position: absolute; */
+        /* bottom: 0; */
         color: #f1f1f1;
         width: 100%;
         padding: 20px;
-        margin-bottom: 220px;
+        margin-top: -350px;
     } 
 
     .hero h1 {
-        font-size: 3rem;
-        margin-bottom: 10px;
+        font-size: 2.7rem;
+        margin-bottom: 5px;
     }
 
     .hero p {
-        font-size: 1.5rem;
-        margin-bottom: 20px;
+        font-size: 1.3rem;
+        margin-bottom: 10px;
     }
 
     #myvideo {
@@ -397,7 +397,7 @@ header .logo img {
         min-width: 100%;
         min-height: 100%;
         overflow: hidden;
-        position: relative;
+        /* position: relative; */
         z-index: -1;
     }
 
@@ -405,7 +405,8 @@ header .logo img {
         background: #13aea6;
         color: #fff;
         font-weight: 500;
-        padding: 10px 20px;
+        font-size: 15;
+        padding: 8px 16px;
         text-decoration: none;
         border-radius: 10px;
     }
@@ -570,6 +571,8 @@ header .logo img {
     #journey {
         background-color: white;
         /* border-radius: 8px; */
+        display: flex;
+        flex-direction: column;
         box-shadow: 0 0 10px rgba(0,0,0,0.1);
         padding: 50px 20px;
     }
@@ -633,7 +636,7 @@ header .logo img {
     .journey-container {
         display: flex;
         justify-content: space-between;
-        height: 650px;
+        /* height: 650px; */
     }
 
     .about-section {
@@ -765,6 +768,7 @@ header .logo img {
         /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); */
     }
 
+    
     .carousel{
         height: 400px;
         width: 400px;
@@ -777,8 +781,12 @@ header .logo img {
         /* width: 80vw; */
         /* overflow: hidden; */
         position: relative;
+        /* margin-right: 100px; */
 
     }
+    /* .slider-container{
+        margin-right: -30px;
+    } */
     .carousel .list .item{
         width: 100%;
         height: 100%;
@@ -790,6 +798,7 @@ header .logo img {
         height: 120%;
         object-fit: cover;
         border-radius: 20px;
+        margin-left: -40px;
         cursor: pointer;
     }
 
@@ -802,6 +811,7 @@ header .logo img {
         z-index: 100;
         display: flex;
         gap: 20px;
+        margin-left: -40px;
     }
     .thumbnail .item{
         width: 150px;
@@ -858,36 +868,53 @@ header .logo img {
    
 @media only screen and (min-width: 768px ) and (max-width: 1024px ){
     .systems{
-        padding: 30px 5px;
+        padding: 15px 5px;
         /* margin: 20px 5px; */
         background: #E6F4EA;
         margin-bottom: 20px;
+        
         /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); */
     }
 
     .carousel{
-        height: 400px;
-        width: 400px;
+        height: 520px;
+        /* width: 400px; */
         border-radius: 20px;
-        margin: 50px 50px 50px 620px;
+        /* margin: 20px 50px 50px 620px; */
+        margin-top: 130px;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         /* height: 100vh; */
         /* margin-top: -50px; */
         /* width: 80vw; */
         /* overflow: hidden; */
+        /* justify-content: center; */
+        align-items: center;
+        margin-bottom: 30px;
         position: relative;
 
     }
+    /* .slider-container{
+        margin-top: -400px;
+    } */
     .carousel .list .item{
         width: 100%;
         height: 100%;
-        position: absolute;
+        margin-top: -220px;
+        /* position: absolute; */
+        /* display: flex;
+        flex-direction: column; */
+        /* margin-left: 15px; */
+        align-items: center;
+        justify-content: center;
         inset: 0 0 0 0;
     }
     .carousel .list .item img{
-        width: 170%;
-        height: 120%;
+        /* width: 170%; */
+        width : 450px ;
+        height: 280px;
+        
         object-fit: cover;
         border-radius: 20px;
         cursor: pointer;
@@ -895,18 +922,25 @@ header .logo img {
 
     /* thumbail */
     .thumbnail{
-        position: absolute;
-        bottom: -180px;
-        left: 25%;
+        /* position: absolute; */
+        /* bottom: -180px; */
+        /* left: 25%; */
         width: max-content;
         z-index: 100;
         display: flex;
+        /* flex :1 ;
+        justify-content: space-between;
+        align-items: center; */
+        margin-left: 50px;
+        /* al */
         gap: 20px;
+        margin-top: -85px;
+        /* margin-left: 40px; */
     }
     .thumbnail .item{
-        width: 150px;
-        height: 220px;
-        flex-shrink: 0;
+        width: 100px;
+        height: 140px;
+        /* flex-shrink: 0; */
         position: relative;
     }
     .thumbnail .item img{
@@ -921,6 +955,7 @@ header .logo img {
         position: absolute;
         bottom: 10px;
         left: 10px;
+        font-size: 10px;
         right: 10px;
     }
     .thumbnail .item .content .title{
@@ -935,24 +970,34 @@ header .logo img {
         background: #f9f9f9;
         border-radius: 8px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        margin-left: -350px;
-        position: absolute;
-        left: -200px;
-        top: 50%;
+        /* margin-left: -350px; */
+        /* position: absolute;s */
+        /* left: -200px; */
+        /* margin-left: 15px; */
+        /* margin-right: 10px; */
+        /* top: 50%; */
         transform: translateY(-50%);
         padding: 20px;
         height: auto;
-        width: 400px;
+        width: 380px;
         /* color: #fff; */
     }
     .content-box .content .title{
-        font-size: 18px;
+        font-size: 23px;
         font-weight: bold;
     }
     .content-box .content .description{
-        font-size: 16px;
+        font-size: 15px;
         margin-top: 10px;
         line-height: 1.6;
+    }
+    .i2{
+        display: none;
+
+    }
+    .i3{
+        display: none;
+
     }
 }
 
@@ -1185,7 +1230,7 @@ header .logo img {
     }
     .step img {
         max-width: 100%;
-        height: auto;
+        height: 120px;
         max-height: 200px; /* Ensure images have the same height */
         object-fit: cover;
         border-radius: 8px;
@@ -1433,7 +1478,7 @@ header .logo img {
     
     .client-in ul{
         display: flex;
-        gap: 50px;
+        gap: 30px;
     }
     
     .client-in ul li{
@@ -1451,7 +1496,7 @@ header .logo img {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        max-width: 150px;
+        max-width: 100px;
         height: auto;
         word-wrap: break-word;   /* Ensures long words break */
         overflow-wrap: break-word;
