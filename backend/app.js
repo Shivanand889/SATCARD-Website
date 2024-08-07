@@ -31,7 +31,8 @@ app.use(session({
 const defaultClient = SibApiV3Sdk.ApiClient.instance;
 
 var apiKey = defaultClient.authentications['api-key'];
-apiKey.apiKey = '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';
+// create api key put  here from brevo
+apiKey.apiKey = 'api-key';
 
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, '../views', 'new_home.html'));
@@ -75,12 +76,13 @@ app.post("/send-mail", async (req, res) => {
 
   const apiInstance = new SibApiV3Sdk.TransactionalEmailsApi();
   const sender = {
-      email: "shivqe74158@gmail.com",
+      // mail from which api is created
+      email: "mail",
       name: "Revin",
   };
   const receiver = [
       {
-          email: "shivanandgarg1234@gmail.com", // will be replaced by official Satcard email
+          email: "satcard mail", // will be replaced by official Satcard email
       },
   ];
 
